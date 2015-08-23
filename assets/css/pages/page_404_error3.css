@@ -25,6 +25,13 @@ body {
 	line-height: 260px;
 }
 
+/*For Mobile Devices*/
+@media (max-width: 500px) { 
+	.error-v4 h1 {
+		font-size: 100px;
+	}
+}
+
 .error-v4 span.sorry {
 	color: #fff;
 	display: block;

@@ -1,12 +1,12 @@
-/*Page_Search1_Block
+/*Page Search Block
 ------------------------------------*/
 .search-block {
 	padding: 40px 0 50px;
 	border-bottom: 1px solid #eee;
-	background: url(../../img/breadcrumbs.png) repeat;
+	background: url(../../img/patterns/breadcrumbs.png) repeat;
 }
 
-.search-block h1 {
+.search-block h2 {
 	font-size: 24px;
 	font-weight: 200;
 	text-align: center;
@@ -14,7 +14,8 @@
 	text-transform: uppercase;
 }
 
-/*Table_Search-V1
+
+/*Table Search v1
 ------------------------------------*/
 .table-search-v1 .btn-u.dropdown-toggle {
 	border-left: none;
@@ -75,7 +76,7 @@
 	width: 40%;
 }
 
-/*Table_Search-V2
+/*Table Search v2
 ------------------------------------*/
 .table-search-v2 .btn-u.dropdown-toggle {
 	border-left: none;
@@ -96,8 +97,8 @@
 }
 
 .table-search-v2 td img {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	margin: 0 auto;
 	display: block;
 }

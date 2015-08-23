@@ -213,7 +213,9 @@
 .pricing-bg-colored .pricing-footer {
 	padding: 2px 0px 19px;
 }
-
+.pricing-bg-colored .pricing-footer .btn-u {
+	border: solid 1px #fff;
+}
 
 /*Pricing Table Rounded Version
 ------------------------------------*/
@@ -247,7 +249,7 @@
 	margin: -75px auto 20px;
 	border-radius: 140px !important;
 	font-weight: normal !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 }
 .pricing-rounded .pricing-head h4 i{
 	margin-right: 2px;
@@ -274,8 +276,7 @@
 	transition:box-shadow 0.2s ease-in-out;
 }
 .pricing-zoom .pricing-head h4 {
-	background: url("../../img/breadcrumbs.png")
-	repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+ scroll 0 0 rgba(0, 0, 0, 0) !important;
 }
 .pricing-zoom .price-active .pricing-head h4,
 .pricing-zoom .pricing:hover .pricing-head h4 {
@@ -305,7 +306,7 @@
 	font-family: inherit;
 	text-shadow: none !important;
 	border-bottom: 1px solid #ddd !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 
 }
 .pricing-light .pricing .rating li {
@@ -335,7 +336,7 @@
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	font-weight: normal !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 
 }
 .pricing-light .pricing-footer h4 i {
@@ -364,7 +365,7 @@
 }
 
 .pricing-medium-light .btn-u:hover {
-background-color: #717984!important;
+	background-color: #717984!important;
 }
 
 /*Pricing Meduim Light
@@ -384,7 +385,7 @@ background-color: #717984!important;
 	text-shadow: none;
 	font-weight: normal !important;
 	border-bottom: 2px solid #eee !important; 
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 }
 .pricing-medium-light .pricing-content > li {
 	border-color: #fff !important;
@@ -422,7 +423,7 @@ background-color: #717984!important;
 	margin: -2px 0 20px;
 	margin-bottom: 20px;
 	font-weight: normal !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 
 }
 .pricing-medium-light .pricing-footer h4 i {
@@ -509,7 +510,7 @@ background-color: #717984!important;
 	font-weight: normal;
 	margin: -2px 0 20px;
 	font-weight: normal !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 }
 .pricing-medium-dark .pricing-footer h4 i {
 	top: -8px;
@@ -576,7 +577,7 @@ background-color: #717984!important;
 	text-shadow: none;
 	font-weight: normal !important;
 	border-bottom: 2px solid #eee !important; 
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 }
 
 .pricing-dark .pricing-content li {
@@ -601,7 +602,7 @@ background-color: #717984!important;
 	margin-bottom: 20px;
 	color: #717984 !important;
 	font-weight: normal !important;
-	background: #fff url("../../img/breadcrumbs.png") !important;
+	background: #fff;
 }
 .pricing-dark .pricing-footer h4 i {
 	top: -8px;
@@ -937,8 +938,8 @@ background-color: #717984!important;
 	 .sticker-right {
 		top: 10px;
 	    right: -58px;
-	    font-size: 10px;
 	    padding: 3px;
+	    font-size: 10px;
 	}	
 	 .sticker-left {
 		top: 10px;

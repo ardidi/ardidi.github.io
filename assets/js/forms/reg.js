@@ -5,7 +5,7 @@ var RegForm = function () {
         //Registration Form
         initRegForm: function () {
 	        // Validation       
-	        $("#sky-form").validate({                   
+	        $("#sky-form4").validate({                   
 	            // Rules for form validation
 	            rules:
 	            {

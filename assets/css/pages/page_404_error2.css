@@ -21,6 +21,13 @@ body {
 	padding-bottom: 10px;
 }
 
+/*For Mobile Devices*/
+@media (max-width: 500px) { 
+	.error-v3 h2 {
+		font-size: 100px;
+	}
+}
+
 .error-v3 p {
 	color: #eee;
 	font-size: 25px;
