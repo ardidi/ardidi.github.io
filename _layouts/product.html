@@ -1,0 +1,127 @@
+---
+layout: default
+---
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">{{page.machinename}}</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="/">首頁</a></li>
+                <li><a href="product_list.html">搭配國家</a></li>
+                <li class="active"><a href="{{page.permalink}}">{{page.machinename}}</a></li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">	
+    	<div class="row">
+        	<div class="col-lg-9 col-md-8 col-sm-12 md-margin-bottom-60">
+                <!--Blog Post-->        
+                    <div class="blog-img">
+                        <img class="img-responsive" src="{{ page.imageBig }}" alt="">
+                    </div>
+                <!--End Blog Post--> 
+            </div>
+            <!-- Right Sidebar -->
+            <div class="col-lg-3 col-md-4 col-sm-12 magazine-page">
+                
+                <!--Basic Table Option (Spacing)-->
+                <div class="panel panel-red margin-bottom-40">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-user"></i>立即預約</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" style="font-size:16px;">日租價格<i>{{ page.price }}</i>元/日</td>
+                                </tr>
+                                <tr>
+                                	<td colspan="2"><a href="//wi-go.com.tw/rent/booking-days.php?serviceID={{page.serviceId}}"><img src="//cdn.wi-go.com.tw/images/reserve.png" height="50"/></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                      
+                </div>
+                <!--End Basic Table-->
+
+                
+            </div>
+            <!-- End Right Sidebar -->
+
+        </div><!--/row-->        
+    </div><!--/container-->		
+    <!--=== End Content Part ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container">		
+    	<div class="row">
+            <!-- Left Sidebar -->
+        	<div class="col-md-4 md-margin-bottom-60">
+                <!--Blog Post-->        
+                    <div class="blog-img">
+                        <img class="img-responsive" src="{{ page.imageMachine }}" alt="">
+                    </div>
+                <!--End Blog Post-->        
+
+            </div>
+            <!-- End Left Sidebar -->
+
+            <!-- Right Sidebar -->
+            <div class="col-md-8">
+                <table style="width:100%">
+					{% for slogan in page.slogan %}
+						<tr>
+							<th style="width:150px; font-size:30px; color:#ff0000;">{{ slogan.title }}</th>
+							<td style="font-size:16px;">{{ slogan.comment }}</td>
+						</tr>
+					{% endfor %}
+				</table>
+            </div>
+            <!-- End Right Sidebar -->
+        </div><!--/row-->        
+    </div><!--/container-->		
+    <!--=== End Content Part ===-->
+    
+    <!--=== Content Part ===-->
+    <div class="container content">		
+        <div class="row no-space-pricing pricing-mega-v3">
+            <div class="col-md-12 col-sm-12 block">
+                <div class="pricing">
+                    <div class="pricing-head">
+                        <h3>
+                            單一價格
+                        </h3>
+                        <h4 class="price" style="color:#000000">
+                            <i></i>{{ page.price }}<i>元/日</i>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-space-pricing pricing-mega-v3">
+            <div class="col-md-12 col-sm-12 block">
+                <div class="pricing">
+                    <div class="pricing-head">
+                        <h3>
+                            說明
+                        </h3>
+                    </div>
+                    <ul class="list-unstyled">
+						{% for reference in page.references %}
+						  <li style="font-size:16px;">{{ reference.text }}</li>
+						{% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+		    <div class="col-md-12 col-centered">
+				<a href="//wi-go.com.tw/rent/booking-days.php?serviceID={{page.serviceId}}"><img src="//cdn.wi-go.com.tw/images/reserve.png" height="50" class=" center-block"/></a>
+		    </div>
+		</div>
+        <!--  End Pricing Mega v3 -->
+	</div><!--/container-->		
