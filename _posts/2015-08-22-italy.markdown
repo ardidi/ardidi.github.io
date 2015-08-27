@@ -1,15 +1,19 @@
 ---
 layout: product
-title:  "Wi-Go國際漫遊出租最便宜 | WiGo機 歐洲 行動上網分享器租借"
+title:  "Wi-Go義大利 行動上網分享器租借"
 date:   2015-08-22 14:20:07
-permalink: italy.html
+permalink: /product/italy.html
 categories: 歐洲
 machinename: "義大利上網分享器"
-price:     "299"
-origPrice: "299"
+nickname: "義大利"
+useCountry: "義大利"
+price:     "299元"
+origPrice: "299元"
 serviceId: "5"
 imageBig:  "//cdn.wi-go.com.tw/images/v2/country/italy/italy-big.jpg"
 imageMachine: "//cdn.wi-go.com.tw/images/v2/country/italy/italy-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/italy/italy.jpg"
+say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
 
 references:
     - text: "※1 使用時間會因環境與電波及上網人數不同而調整。部分機型使用時間約可使用4小時，建議搭配行動電源使用。"
@@ -28,23 +32,3 @@ slogan:
     - title: "輕量流暢！"
       comment: "重量僅140克，15秒快速啟動！"
 ---
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help

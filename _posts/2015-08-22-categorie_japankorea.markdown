@@ -1,13 +1,11 @@
 ---
-layout: product
-title:  "Wi-Go日本 行動上網分享器租借"
+layout: category
+title:  "Wi-Go日本 韓國 行動上網分享器租借"
 date:   2015-08-22 14:20:07
-permalink: /product/japan.html
-categories: 亞洲
-categories: 日韓
-machinename: "日本上網分享器"
-nickname: "日本"
-useCountry: "日本"
+permalink: /category/japankorea.html
+selectCategory: 日韓
+machinename: "日本、韓國上網分享器"
+nickname: "日本、韓國上網分享器"
 price:     "150元起"
 origPrice: "150元起"
 serviceId: "2"

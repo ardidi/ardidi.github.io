@@ -1,19 +1,24 @@
 ---
 layout: product
-title:  "Wi-Go日本 行動上網分享器租借"
+title:  "Wi-Go法國 行動上網分享器租借"
 date:   2015-08-22 14:20:07
-permalink: /product/japan.html
-categories: 亞洲
-categories: 日韓
-machinename: "日本上網分享器"
-nickname: "日本"
-useCountry: "日本"
-price:     "150元起"
-origPrice: "150元起"
-serviceId: "2"
-imageBig:  "//cdn.wi-go.com.tw/images/v2/country/japan/japan-big.jpg"
-imageMachine: "//cdn.wi-go.com.tw/images/v2/country/japan/japan-m.png"
-image: "//cdn.wi-go.com.tw/images/v2/country/japan/japan.jpg"
+permalink: /product/france.html
+categories: 歐洲
+machinename: "法國上網分享器"
+nickname: "法國"
+price:     "299元"
+origPrice: "299元"
+serviceId: "5"
+datalimit: "流量無上限"
+datalimitExplain: "每日400MB後將會降速，無流量使用上限，不會額外收費"
+fup: "為了維護網路連線品質及公平使用原則，世界各國的電信公司有時會針對短時間內使用極大網路流量的顧客進行流量管制，可能導致無法上網或上網速度變慢。建議不要觀看影音檔、網路電視、視訊、線上遊戲....等等，並關掉3C產品的自動更新功能與雲端硬碟傳送資料功能。萬一發生了此類限制情況，這段時間的使用費仍需由客戶自行負擔。"
+
+
+imageBig:  "//cdn.wi-go.com.tw/images/v2/country/italy/italy-big.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/italy/italy-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/italy/italy.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/italy/italy-m.png"
+
 say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
 
 references:

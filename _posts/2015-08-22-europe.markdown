@@ -1,6 +1,43 @@
 ---
 layout: product
-title:  "Wi-Go國際漫遊出租最便宜 | WiGo機 歐洲 行動上網分享器租借"
+title:  "Wi-Go歐洲周遊 行動上網分享器租借"
+date:   2015-08-22 14:20:07
+permalink: /product/europe.html
+categories: 歐洲多國
+machinename: "歐洲周遊上網分享器"
+nickname: "歐洲周遊"
+price:     "349元"
+origPrice: "349元"
+serviceId: "4"
+imageBig:  "//cdn.wi-go.com.tw/images/v2/country/europe/europe-big.jpg"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/europe/europe-m.png"
+image: "//cdn.wi-go.com.tw/images/v2/country/europe/europe.jpg"
+say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
+
+references:
+    - text: "※1 使用時間會因環境與電波及上網人數不同而調整。實際使用時間約4小時，建議搭配行動電源使用。"
+    - text: "※2 公平使用政策：德國分享器每位使用者無數據使用上限，保證高速上網使用量為400MB/日，若您超過此使用量，則有可能遭到限速56kbps，本公司對此情形無法退費。"
+    - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
+
+slogan:
+    - title: "便宜革命！"
+      comment: "誰說便宜不能有好貨，每天最低319元，10人分享每人不到一瓶飲料就能自由打卡！"
+    - title: "超大電量！"
+      comment: "可連續使用8小時，讓你從早玩到晚。"
+    - title: "周遊歐洲！"
+      comment: "你還在一個國家一個國家的買SIM卡嗎？漫遊歐洲49國家只要一台機器。"
+    - title: "絕對高速！"
+      comment: "2015年最新網卡，通吃歐洲各國頻段！"
+    - title: "輕量流暢！"
+      comment: "重量僅140克，15秒快速啟動！"
+    - title: "無附加費！"
+      comment: "租借期間每日可使用400MB，總流量超過即斷線，無附加費用。"
+---
+
+
+---
+layout: product
+title:  "Wi-Go歐洲周遊 行動上網分享器租借"
 date:   2015-08-22 14:20:07
 permalink: europe.html
 categories: 歐洲
