@@ -26,11 +26,7 @@ layout: default
     <!--=== Content Part ===-->
     <div class="container content"> 	
     	<div class="row portfolio-item margin-bottom-50"> 
-    	{{page.selectCategory}}
-    	{{site.categories}}
-    	{{page.selectCategory}}
-			{% for post in site.categories."{{page.selectCategory}}" %}
-			{{ post.title }}
+			{% for post in site.categories[page.selectCategory] %}
             <!-- 第一個機種 -->
             <div class="col-md-6 md-margin-bottom-40">
             	<div class="col-xs-7">
@@ -41,27 +37,21 @@ layout: default
                                 <tbody>
                                     <tr>
                                         <td>
-                                            可使用國家
+                                            機種名稱
                                         </td>
-                                        <td>{{ page.useCountry }}</td>
+                                        <td>{{ post.machinename }}</td>
                                     </tr>
                                     <tr>
                                         <td>
                                             租金(1日)
                                         </td>
-                                        <td>{{ page.price }}</td>
+                                        <td>{{ post.price }}</td>
                                     </tr>
                                     <tr>
                                         <td>
                                             可使用國家
                                         </td>
-                                        <td>{{ page.useCountry }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            可使用國家
-                                        </td>
-                                        <td>{{ page.useCountry }}</td>
+                                        <td>{{ post.useCountry }}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -73,7 +63,7 @@ layout: default
 	                <div class="carousel slide carousel-v1" id="myCarousel">
 	                    <div class="carousel-inner">
 	                        <div class="item active">
-	                            <img alt="" src="{{ page.imageMachine }}">
+	                            <img alt="" src="{{ post.imageMachine }}">
 	                            <div class="carousel-caption">
 	                                <p>本圖僅供參考，詳細機型以本公司庫存為主</p>
 	                            </div>
@@ -85,90 +75,6 @@ layout: default
             </div>
             <!-- 第一個機種End -->
 		    {% endfor %}
-
-            <!-- 第二個機種 -->
-            <div class="col-md-6 md-margin-bottom-40">
-            </div>
-            <!-- 第二個機種End -->   
-
-            
-            <!-- Content Info -->
-            <div class="col-md-7 md-margin-bottom-40">
-                <h2>設備介紹</h2>
-					<!--Table Search v1-->
-                    <div class="table-search-v1 margin-bottom-20">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-bordered table-striped">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            可使用國家
-                                        </td>
-                                        <td>{{ page.useCountry }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            租金(1日)
-                                        </td>
-                                        <td>{{ page.price }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            可使用國家
-                                        </td>
-                                        <td>{{ page.useCountry }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            可使用國家
-                                        </td>
-                                        <td>{{ page.useCountry }}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>    
-                    </div>
-                    <!--End Table Search v1-->
-                   
-                <h2>查詢價格</h2>
-                
-                <form action="#" id="sky-form" class="sky-form" style="box-shadow: 0 0 0px rgba(0,0,0,0);">
-                <input type="hidden" name="serviceID" id="serviceID" value="{{page.serviceId}}">
-                <div class="row">
-                    <section class="col col-6">
-                        起租日
-                        <label class="input">
-                            <i class="icon-append fa fa-calendar"></i>
-                            <input type="text" name="startDate" id="startDate" placeholder="起租日">
-                        </label>
-                    </section>
-                    <section class="col col-6">
-                    	退租日
-                        <label class="input">
-                            <i class="icon-append fa fa-calendar"></i>
-                            <input type="text" name="finishDate" id="finishDate" placeholder="退租日">
-                        </label>
-                    </section>
-                </div>
-                </form>
-            </div>
-            <!-- End Content Info -->        
-
-            <!-- Carousel -->
-            <div class="col-md-5 md-margin-bottom-40">
-                <div class="carousel slide carousel-v1" id="myCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img alt="" src="{{ page.imageMachine }}">
-                            <div class="carousel-caption">
-                                <p>本圖僅供參考，詳細機型以本公司庫存為主</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Carousel -->
-             
         </div><!--/row-->
     </div><!--/container-->		
     <!--=== End Content Part ===-->

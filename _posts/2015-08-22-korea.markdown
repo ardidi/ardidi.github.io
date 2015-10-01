@@ -3,8 +3,7 @@ layout: product
 title:  "Wi-Go韓國 行動上網分享器租借"
 date:   2015-08-22 14:20:07
 permalink: /product/korea.html
-categories: 亞洲
-categories: 日韓
+categories: ['亞洲','日韓']
 machinename: "韓國上網分享器"
 nickname: "韓國"
 useCountry: "韓國"
@@ -12,7 +11,7 @@ price:     "150元起"
 origPrice: "150元起"
 serviceId: "2"
 imageBig:  "//cdn.wi-go.com.tw/images/v2/country/japan/japan-big.jpg"
-imageMachine: "//cdn.wi-go.com.tw/images/v2/country/japan/japan-m.png"
+imageMachine: "//cdn.wi-go.com.tw/images/v2/country/korea/korea-m.png"
 image: "//cdn.wi-go.com.tw/images/v2/country/japan/japan.jpg"
 say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
 
