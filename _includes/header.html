@@ -31,7 +31,7 @@
 
                     <!-- Navbar Brand -->
                     <div class="navbar-brand">
-                        <a href="index.html">
+                        <a href="/index.html">
                             <img class="shrink-logo" src="/images/logo-t.png" alt="Logo">
                         </a>
                     </div>
@@ -63,29 +63,80 @@
                 <div class="collapse navbar-collapse navbar-responsive-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav">
-	                        <li class="dropdown">
+							<li class="dropdown mega-menu-fullwidth">
 	                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-	                                搭配國家
+	                            	搭配國家
 	                            </a>
-	                            <ul class="dropdown-menu">
-	                                <li><a href="/japan.php">日本上網分享器</a></li>
-	                                <li><a href="/korea.php">韓國上網分享器</a></li>
-	                                <li><a href="/europe.php">歐洲周遊分享器</a></li>
-	                                <li><a href="/us.php">美國上網分享器</a></li>
-	                                <li><a href="/italy.php">義大利上網分享器</a></li>
-	                                <li><a href="/german.php">德國上網分享器</a></li>
-	                                <li><a href="/swiss.php">瑞士上網分享器</a></li>
-	                                <li><a href="/france.php">法國上網分享器</a></li>
-	                                <li><a href="/china.php">中國上網分享器</a></li>
-	                                <!--li><a href="russia.php">俄羅斯上網分享器</a></li-->
-	                            </ul>
-	                        </li>
-	
+								<ul class="dropdown-menu">
+		                            <li>
+		                                <div class="mega-menu-content disable-icons">
+		                                    <div class="container">
+		                                        <div class="row equal-height">
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>熱門產品</h3></li>
+		
+		                                                    <!-- Typography -->
+		                                                    <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i> General Typography</a></li>
+		                                                    <li><a href="shortcode_typo_headings.html"><i class="fa fa-magic"></i> Headings Options</a></li>
+		                                                    <li><a href="shortcode_typo_dividers.html"><i class="fa fa-ellipsis-h"></i> Dividers</a></li>
+		                                                    <li><a href="shortcode_typo_blockquote.html"><i class="fa fa-quote-left"></i> Blockquote Blocks</a></li>
+		                                                    <li><a href="shortcode_typo_boxshadows.html"><i class="fa fa-asterisk"></i> Box Shadows</a></li>
+		                                                    <li><a href="shortcode_typo_testimonials.html"><i class="fa fa-comments"></i> Testimonials</a></li>
+		                                                    <li><a href="shortcode_typo_tagline_boxes.html"><i class="fa fa-tasks"></i> Tagline Boxes</a></li>
+		                                                    <li><a href="shortcode_typo_grid.html"><i class="fa fa-align-justify"></i> Grid Layouts</a></li>
+		                                                </ul>
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                
+		                                                    <li><h3>日韓</h3></li>
+		                                                    {% for post in site.categories['日韓'] %}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>亞洲</h3></li>
+		                                                    {% for post in site.categories['亞洲'] %}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                </ul>                                
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>歐洲</h3></li>
+		                                                    {% for post in site.categories['歐洲'] reversed%}
+			                                                    <li><a href="{{ post.url }}"><i style="display:inline-block; width:32px; height:20px; background-position:center center; background-image: url('{{post.countryFlag}}'); padding-top:5px;"></i><span style=" position:relative; top:-5px;">{{ post.machinename }}</span></a></li>
+															{% endfor %}
+		                                                </ul>    
+		                                            </div>
+		                                            <div class="col-md-3 equal-height-in">
+		                                                <ul class="list-unstyled equal-height-list">
+		                                                    <li><h3>北美洲</h3></li>
+		                                                    {% for post in site.categories['美洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>大洋洲</h3></li>
+		                                                    {% for post in site.categories['大洋洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                    
+		                                                    <li><h3>非洲</h3></li>
+		                                                    {% for post in site.categories['非洲'] %}
+		                                                    	<li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i>{{ post.machinename }}</a></li>
+															{% endfor %}
+		                                                </ul>    
+		                                            </div>
+		                                        </div>
+		                                    </div>    
+		                                </div>    
+		                            </li>
+		                        </ul>
+							</li>
 	                        <li><a href="/price.php">租借費用</a></li>
 	                        <li><a href="/flow.php">租借流程</a></li>
 	                        <li><a href="/qa.php">Ｑ＆Ａ</a></li>
 	                        <li><a href="/contact.php">聯絡我們</a></li>
-		                        
                         </ul>
                     </div>
                 </div><!--/navbar-collapse-->

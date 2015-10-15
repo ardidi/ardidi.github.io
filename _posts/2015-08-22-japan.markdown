@@ -1,18 +1,20 @@
 ---
-layout: product
+layout: product_jp
 title:  "Wi-Go日本 行動上網分享器租借"
 date:   2015-08-22 14:20:07
 permalink: /product/japan.html
-categories: ['亞洲','日韓']
+categories: ['日韓','熱門']
 machinename: "日本上網分享器"
 nickname: "日本超值機"
 useCountry: "日本"
 price:     "150元起"
 origPrice: "150元起"
-serviceId: "2"
-imageBig:  "//cdn.wi-go.com.tw/images/v2/country/japan/japan-big.jpg"
+serviceId: ['2','3']
+imageBig:  "/images/v2/country/japan/japan-big2.jpg"
 imageMachine: "//cdn.wi-go.com.tw/images/v2/country/japan/wgjp.jpg"
 image: "//cdn.wi-go.com.tw/images/v2/country/japan/japan.jpg"
+countryFlag: "/images/v2/flags/flat/32/Japan.png"
+
 say: "不管是在古羅馬競技場，還是風情萬種的威尼斯，義大利上網無限分享無限精彩。"
 
 references:
@@ -21,7 +23,7 @@ references:
     - text: "※3 歐洲電信網路架設不如台灣基地台綿密，在小城鎮或是室內仍有可能有收訊死角，訊號強弱仍看當地現場狀況為主。"
 
 slogan:
-    - title: "便宜革命！"
+    - title: "便宜革命1！"
       comment: "誰說便宜不能有好貨，每天只要299元，可4人共用，朋友分享超級划算！"
     - title: "收訊最好！"
       comment: "義大利最大電信公司，收訊絕對第一！"

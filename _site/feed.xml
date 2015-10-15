@@ -6,8 +6,8 @@
 </description>
     <link>http://cdn.wi-go.com.tw//</link>
     <atom:link href="http://cdn.wi-go.com.tw//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 28 Sep 2015 14:13:57 +0800</pubDate>
-    <lastBuildDate>Mon, 28 Sep 2015 14:13:57 +0800</lastBuildDate>
+    <pubDate>Fri, 09 Oct 2015 14:58:03 +0800</pubDate>
+    <lastBuildDate>Fri, 09 Oct 2015 14:58:03 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -19,9 +19,9 @@
         <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/korea.html</guid>
         
         
-        <category>亞洲</category>
-        
         <category>日韓</category>
+        
+        <category>熱門</category>
         
       </item>
     
@@ -34,37 +34,9 @@
         <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/japan.html</guid>
         
         
-        <category>亞洲</category>
-        
         <category>日韓</category>
         
-      </item>
-    
-      <item>
-        <title>Wi-Go日本 行動上網分享器租借</title>
-        <description>
-</description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
-        <link>http://cdn.wi-go.com.tw//product/japan.html</link>
-        <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/japan.html</guid>
-        
-        
-        <category>亞洲</category>
-        
-        <category>日韓</category>
-        
-      </item>
-    
-      <item>
-        <title>Wi-Go義大利 行動上網分享器租借</title>
-        <description>
-</description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
-        <link>http://cdn.wi-go.com.tw//product/italy.html</link>
-        <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/italy.html</guid>
-        
-        
-        <category>歐洲</category>
+        <category>熱門</category>
         
       </item>
     
@@ -72,9 +44,22 @@
         <title>Wi-Go德國 行動上網分享器租借</title>
         <description>
 </description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
+        <pubDate>Wed, 05 Aug 2015 08:00:00 +0800</pubDate>
         <link>http://cdn.wi-go.com.tw//product/german.html</link>
         <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/german.html</guid>
+        
+        
+        <category>歐洲</category>
+        
+      </item>
+    
+      <item>
+        <title>Wi-Go義大利 行動上網分享器租借</title>
+        <description>
+</description>
+        <pubDate>Tue, 04 Aug 2015 08:00:00 +0800</pubDate>
+        <link>http://cdn.wi-go.com.tw//product/italy.html</link>
+        <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/italy.html</guid>
         
         
         <category>歐洲</category>
@@ -85,7 +70,7 @@
         <title>Wi-Go法國 行動上網分享器租借</title>
         <description>
 </description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
+        <pubDate>Sun, 02 Aug 2015 08:00:00 +0800</pubDate>
         <link>http://cdn.wi-go.com.tw//product/france.html</link>
         <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/france.html</guid>
         
@@ -249,23 +234,14 @@ categories: 歐洲
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
+        <pubDate>Sat, 01 Aug 2015 08:00:00 +0800</pubDate>
         <link>http://cdn.wi-go.com.tw//product/europe.html</link>
         <guid isPermaLink="true">http://cdn.wi-go.com.tw//product/europe.html</guid>
         
         
-        <category>歐洲多國</category>
+        <category>歐洲</category>
         
-      </item>
-    
-      <item>
-        <title>Wi-Go日本 韓國 行動上網分享器租借</title>
-        <description>
-</description>
-        <pubDate>Sat, 22 Aug 2015 22:20:07 +0800</pubDate>
-        <link>http://cdn.wi-go.com.tw//category/japankorea.html</link>
-        <guid isPermaLink="true">http://cdn.wi-go.com.tw//category/japankorea.html</guid>
-        
+        <category>熱門</category>
         
       </item>
     
