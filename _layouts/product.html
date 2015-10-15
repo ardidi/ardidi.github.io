@@ -257,7 +257,7 @@
 			var date_To = $('#finishDate').val();
 			var serviceID = $('#serviceID').val();
 			if(date_To!=''){
-			    $.getJSON("http://wi-go.com.tw/rent/ajax/checkDayAvailabilityNew.php?callback=?",{dateFrom:date_From,dateTo:date_To,serviceID:serviceID},function(data){
+			    $.getJSON("//wi-go.com.tw/rent/ajax/checkDayAvailabilityNew.php?callback=?",{dateFrom:date_From,dateTo:date_To,serviceID:serviceID},function(data){
 			    	if(!data.responce==true){
 				    	$('#rentAmount').html("");
 						$("#message").html(data.message);
