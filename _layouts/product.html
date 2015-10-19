@@ -72,54 +72,79 @@
 				        	</div>
 						</div>
 		            	<div class="row">
-			            	<div class="col-md-6 ">
+			            	<div class="col-md-12 ">
 			            	
 				    			<div class="panel panel-dark-blue">
 									<div class="panel-heading">
 										<h3 class="panel-title">設備介紹</h3>
 									</div>
 									
-									<!--Table Search v1-->
-				                    <div class="table-search-v1">
-				                        <div class="table-responsive">
-				                            <table class="table table-hover table-bordedark-blue table-striped">
-				                                <tbody>
-				                                    <tr>
-				                                        <td style="width:180px;">
-				                                            可使用國家
-				                                        </td>
-				                                        <td>{{ page.useCountry }}</td>
-				                                    </tr>
-				                                    <tr>
-				                                        <td>
-				                                            租金(1日)
-				                                        </td>
-				                                        <td>{{ page.price }}</td>
-				                                    </tr>
-				                                    <tr>
-				                                        <td>
-				                                            流量限制
-				                                        </td>
-				                                        <td>{{ page.datalimit }}</td>
-				                                    </tr>
-				                                    <tr>
-				                                        <td>
-				                                            其餘說明
-				                                        </td>
-				                                        <td>{{ page.datalimitExplain }}</td>
-				                                    </tr>
-				                                </tbody>
-				                            </table>
-				                        </div>    
-				                    </div>
-				                    <!--End Table Search v1-->
+									<div class="row margin-top-10">
+										<!--Table Search v1-->
+					                    <div class="table-search-v1 col-md-5 col-xs-offset-1">
+					                        <div class="table-responsive">
+					                            <table class="table table-hover table-bordedark-blue table-striped">
+					                                <tbody>
+					                                    <tr>
+					                                        <td style="width:180px;">
+					                                            可使用國家
+					                                        </td>
+					                                        <td>{{ page.useCountry }}</td>
+					                                    </tr>
+					                                    <tr>
+					                                        <td>
+					                                            租金(1日)
+					                                        </td>
+					                                        <td style="font-size:20px;">{{ page.price }}<i>/日</i></td>
+					                                    </tr>
+					                                    <tr>
+					                                        <td>
+					                                            流量限制
+					                                        </td>
+					                                        <td>{{ page.datalimit }}</td>
+					                                    </tr>
+					                                    <tr>
+					                                        <td colspan="2" style="text-align:center; font-weight:bold;">
+					                                            其餘說明
+					                                        </td>
+					                                    </tr>
+					                                    <tr>
+					                                        <td colspan="2" style="text-align:center;">
+					                                            {{ page.datalimitExplain }}
+					                                        </td>
+					                                    </tr>
+					                                    <tr>
+					                                        <td colspan="2" style="text-align:center;">
+					                                        	<a href="https://wi-go.com.tw/rent/booking-days.php?serviceID={{page.serviceId}}"><img src="/images/btn-reserve.png" /></a>
+					                                        </td>
+					                                    </tr>
+					                                </tbody>
+					                            </table>
+					                        </div>    
+					                    </div>
+					                    <!--End Table Search v1-->
+					            		<!-- Carousel -->
+							            <div class="col-md-6">
+							                <div class="carousel slide carousel-v1" id="myCarousel">
+							                    <div class="carousel-inner">
+							                        <div class="item active">
+							                            <img alt="" src="{{ page.imageMachine }}">
+							                            <!--div class="carousel-caption">
+							                                <p>本圖僅供參考，詳細機型以本公司庫存為主</p>
+							                            </div-->
+							                        </div>
+							                    </div>
+							                </div>
+							            </div>
+							            <!-- End Carousel -->
+									</div>
 				    			</div>
 				                
 				                
 				                
 				    			<div class="panel panel-dark-blue margin-bottom-10">
 									<div class="panel-heading">
-										<h3 class="panel-title">查詢價格</h3>
+										<h3 class="panel-title">價格試算</h3>
 									</div>
 				                
 					                <form action="https://wi-go.com.tw/rent/booking-days.php" method="get" id="sky-form" class="sky-form" style="box-shadow: 0 0 0px rgba(0,0,0,0);">
@@ -160,20 +185,6 @@
 				            </div>
 				            <!-- End Content Info -->
 				            
-		            		<!-- Carousel -->
-				            <div class="col-md-4 md-margin-bottom-40">
-				                <div class="carousel slide carousel-v1" id="myCarousel">
-				                    <div class="carousel-inner">
-				                        <div class="item active">
-				                            <img alt="" src="{{ page.imageMachine }}">
-				                            <!--div class="carousel-caption">
-				                                <p>本圖僅供參考，詳細機型以本公司庫存為主</p>
-				                            </div-->
-				                        </div>
-				                    </div>
-				                </div>
-				            </div>
-				            <!-- End Carousel -->
 		            	</div>
 		            	
 						<div class="row">
