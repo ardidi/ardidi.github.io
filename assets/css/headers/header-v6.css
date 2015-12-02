@@ -100,8 +100,8 @@
 
 /*Navbar Brand*/
 .header-v6 .navbar-brand {
-	height: 93px;
-	max-height: 93px;
+	height: 83px;
+	max-height: 83px;
 	line-height: 65px;
 }
 
@@ -122,10 +122,17 @@
 	display: inherit;
 }
 
+@media (max-width: 599px) {
+	.header-v6 .navbar-brand {
+		padding-top: 20px;
+		height: 63px;
+	}
+}
 /*Media Queries*/
 @media (max-width: 991px) {
 	.header-v6 .navbar-brand {
 		padding-top: 20px;
+		height: 83px;
 	}
 
 	.header-v6 .navbar-brand img.shrink-logo {
@@ -200,7 +207,7 @@
 .header-v6 .header-inner-right {
 	float: right;
 	z-index: 999;
-	margin-left: -20px;
+	margin-left: -30px;
 	position: relative;
 }
 
@@ -1020,7 +1027,7 @@
 	.header-fixed .header-v6.header-fixed-shrink .header-inner-right,
 	.header-fixed .header-v6.header-fixed-shrink .menu-icons-list {
 		margin-left: 0;
-		margin-right: 20px;
+		/*margin-right: 20px;*/
 	}
 
 	/*Menu Icons*/

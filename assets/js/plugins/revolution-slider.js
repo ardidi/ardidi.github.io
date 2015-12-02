@@ -3,6 +3,22 @@ var RevolutionSlider = function () {
     return {
         
         //Revolution Slider - Full Width
+        initRS: function () {
+		    var revapi;
+	        jQuery(document).ready(function() {
+	            revapi = jQuery('.tp-banner').revolution(
+	            {
+	                delay:9000,
+	                startwidth:1170,
+	                startheight:350,
+	                hideThumbs:10,
+	                fullWidth:"off",
+					navigationStyle:"preview4"
+	            });
+	        });
+        },
+
+        //Revolution Slider - Full Width
         initRSfullWidth: function () {
 		    var revapi;
 	        jQuery(document).ready(function() {
@@ -10,7 +26,7 @@ var RevolutionSlider = function () {
 	            {
 	                delay:9000,
 	                startwidth:1170,
-	                startheight:500,
+	                startheight:350,
 	                hideThumbs:10,
 					navigationStyle:"preview4"
 	            });

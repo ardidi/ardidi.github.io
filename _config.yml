@@ -9,7 +9,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://cdn.wi-go.com.tw" # the base hostname & protocol for your site
 facebook_url: https://www.facebook.com/WiGoTW
 github_username:  jekyll
-keep_files: ["images", "assets", "assets-old"]
+keep_files: ["images", "assets", "assets-old", "quiz"]
 paginate: 5
 
 # Build settings
