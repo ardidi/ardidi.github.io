@@ -10,12 +10,8 @@
 
 
 @media (max-width: 767px) {
-	.header .navbar-nav {
-		height: 68px;
-	}
 	.navbar-toggle{
 		height: 68px;
-		
 	}
 }
 
