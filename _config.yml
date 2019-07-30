@@ -1,13 +1,13 @@
 # Site
 name: "職場中離的人生"
 title: "職場中離的人生"
-description: "跟著我們一起學習財務規劃，讓生活更有規劃，達到提早從職場中離的終極目標"
+description: "跟著我們一起學習如何規劃財務，讓未來生活更有保障，達到提早從職場中離的終極目標"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
 google_analytics: 'UA-144844180-1'
-disqus: 'demowebsite'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+disqus: 'ardidi'
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
