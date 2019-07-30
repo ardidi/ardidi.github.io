@@ -1,7 +1,7 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
+name: "Sandy職場中離的人生"
+title: "Sandy職場中離的人生"
+description: "跟著我們一起進行財務規劃，目標就是從職場中離"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -13,23 +13,23 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  sandy:
+    name: Sandy
+    display_name: ardidi
+    gravatar: 329f04f469be515bfbc8173ea5a96a98
+    email: ardidi@ardidi.com
+    web: https://ardidi.com
+    twitter: https://twitter.com/ardidi
+    description: "一個從研究所畢業後就開始各種創業，妄想在35歲之前就能夠退休的人 (規劃中)"
   john:
     name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    display_name: ''    
+    avatar: ''
+    gravatar: ''
+    email: ''
+    web: ''
+    twitter: ''
+    description: ""
 
 # Plugins
 plugins:
@@ -63,8 +63,8 @@ kramdown:
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
