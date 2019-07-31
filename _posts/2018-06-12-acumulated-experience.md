@@ -1,11 +1,24 @@
 ---
-layout: post
+layout: post_with_point
 title: "[財務自由的第一堂課] 了解【現金流】!原來我花掉的不只是錢，更是..."
 author: sandy
 categories:
 - 現金流
 - 財務自由
 image: assets/images/15.jpg
+points: 
+- 現金不等於現金流
+- 你現在多花掉的每一塊錢，未來會加倍奉還
+- 重點一
+- 重點二
+- 重點一
+- 重點二
+- 重點一
+- 重點二
+- 重點一
+- 重點二
+- 重點一
+- 重點二
 
 ---
 The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.
