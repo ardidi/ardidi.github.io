@@ -8,9 +8,15 @@ comments: false
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>曾經我也是每個月收到薪水之後就花掉，然後在等著下一個月的薪水。但是某一天起床時發現，我的人生就卡在這邊了，因此我減少開銷，把每個月的薪水存下7成，最後存到了大概70萬元吧，然後和朋友開餐廳就賠光了。</p>
+<p>存款歸零的時候覺得人生太辛苦了，我就開始和朋友討論說要存到多少錢才能退休，當時計算出了一個天文數字，講完就和朋友笑笑的說還是等父母遺產比較快。那時候的玩笑卻在我心中萌生了一個想法，但那時候一方面是完全沒有存款，另一方面是受到了蠻大的震撼，對我來說這個數字比遙遠更遠，也因此一直都沒有很精確去計算</p>
+<p>在埋頭苦幹了三四年之後，又存了一筆錢。然後那年也結婚了，也因此我開始計算究竟我一年需要多少錢才能讓全家都過上基本的生活，才發現<b>其實事情沒有像我想像的這麼困難，因此我決定追求人生的終極目標提早退休</b></p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
+<p class="mb-5"></p>
+<h4>為什麼你這麼早就要退休?</h4>
+
+<p>有句廣告詞說得好「<a href="https://www.youtube.com/watch?v=QzJgeVNmDoA">你終究是要退休的，那為什麼不一開始就退</a>」(揍飛)</p>
+
 <h4>賺到多少錢才能退休？是不是真的能辦到呢?</h4>
 
 <p>其實我每天都在想能不能辦到，以現在來說每天都目標都更近一步，但是人生是一連串的意外，是不是能辦到只有當人生結束的那天才能確認了。</p>
@@ -32,11 +38,19 @@ comments: false
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h5>推薦書目</h5>
+<ul>
+<li>原來有錢人都這麼做2</li>
+<li>富爸爸,有錢人為什麼越來越有錢 (本書跟上面那本意見相反)</li>
+</ul>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<h5>推薦網站</h5>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
+<ul>
+<li><a href="https://justacafe.com">Just a cafe</a></li>
+<li><a href="https://shawntsai.blogspot.com/">急症最前線投資現金流</a></li>
+<li><a href="https://coldbloodinvestment.blogspot.com">冷血投資</a></li>
+</ul>
 
 </div>
 </div>
