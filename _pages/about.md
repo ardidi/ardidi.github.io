@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: 關於我
 permalink: /about
 comments: true
 ---
@@ -11,13 +11,19 @@ comments: true
 <p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
 
 <p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<h4>賺到多少錢才能退休？是不是真的能辦到呢?</h4>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p>其實我每天都在想能不能辦到，以現在來說每天都目標都更近一步，但是人生是一連串的意外，是不是能辦到只有當人生結束的那天才能確認了。</p>
+<p>多少錢才能退休？這個問題其實沒有一個正確解答(看到這先別急著走)。每個人家庭狀況不一樣，有人一人飽全家飽，也有人一個人要養活全家大小十幾個人；有人大魚大肉，有人粗茶淡飯。能夠讓你認識自己想要過的生活，並且持續而長久增值自己的資產總值，才是我成立這網站的目標</p>
+<p>當然在我內心當中有一個對於資產以及投資報酬率的確切數字，如果你也想要規劃這個數字，建議可以使用本站的退休計算機進行計算</p>
 
-<h4>Questions or bug reports?</h4>
+<h4>現在的進度？</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>目前還在努力中，得到</p>
+
+<h4>想要聯絡我或是想要合作？</h4>
+
+<p>請直接來信聯絡 ardidi@ardidi.com</p>
 
 </div>
 
