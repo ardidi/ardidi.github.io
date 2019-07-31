@@ -17,9 +17,11 @@ comments: true
 <p>多少錢才能退休？這個問題其實沒有一個正確解答(看到這先別急著走)。每個人家庭狀況不一樣，有人一人飽全家飽，也有人一個人要養活全家大小十幾個人；有人大魚大肉，有人粗茶淡飯。能夠讓你認識自己想要過的生活，並且持續而長久增值自己的資產總值，才是我成立這網站的目標</p>
 <p>當然在我內心當中有一個對於資產以及投資報酬率的確切數字，如果你也想要規劃這個數字，建議可以使用本站的退休計算機進行計算</p>
 
-<h4>現在的進度？</h4>
+<h4>你現在的進度？</h4>
 
-<p>目前還在努力中，得到</p>
+<p>目前還在努力中，當以下圖表到100%的時候我們再看看是不是真的能宣布退休
+	<iframe width="509" height="356" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyYUvxKoU85BGPKl_nzQYOevc0qH7DDWk_Aj8M5EimobuQK1xxZhGbt2kDKAzlARUpaWNAmd9AYEr9/pubchart?oid=963292344&amp;format=interactive"></iframe>
+</p>
 
 <h4>想要聯絡我或是想要合作？</h4>
 
