@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Accumulated experience of social living
-author: sal
+author: sandy
 categories:
-- Jekyll
-- tutorial
+- 現金流
+- 基礎
 image: assets/images/15.jpg
 
 ---
