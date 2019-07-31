@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Accumulated experience of social living
+title: "[財務自由的第一堂課] 了解【現金流】!原來我花掉的不只是錢，更是..."
 author: sandy
 categories:
 - 現金流
-- 基礎
+- 財務自由
 image: assets/images/15.jpg
 
 ---
