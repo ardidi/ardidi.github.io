@@ -16,7 +16,16 @@
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+<!-- CSS Unify -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/unify-core.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/unify-components.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/unify-globals.css">
+
+<!-- CSS Customization -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
 {% if jekyll.environment == 'production' %}
@@ -70,7 +79,7 @@
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">所有文章</a>
                 </li>
 
                 <li class="nav-item">
@@ -78,11 +87,7 @@
                 </li>
 
                 <li class="nav-item">
-                <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> 退休計算機</a>
-                </li>
-
-                <li class="nav-item">
-                <a target="_blank" class="nav-link" href="{{ site.baseurl }}/retire-calculator"><i class="fa fa-calculator"></i> 退休計算機</a>
+                <a target="_blank" class="nav-link" href="{{ site.baseurl }}/calculator"><i class="fa fa-calculator"></i> 退休計算機</a>
                 </li>
 
                 <li class="nav-item">
@@ -194,7 +199,17 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+<script src="{{ site.baseurl }}/assets/vendor/popper.min.js"></script>
+
+<!-- JS Unify -->
+<script src="{{ site.baseurl }}/assets/js/hs.core.js"></script>
+
+<!-- JS Custom -->
+<script src="{{ site.baseurl }}/assets/js/custom.js"></script>
 
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
