@@ -9,11 +9,9 @@ comments: true
         <form id="FireCalcForm">
             <div class="card rounded-0">
                 <h3 class="card-header h5 rounded-0">
-                    <i class="fa fa-tasks g-font-size-default g-mr-5"></i>
-                    簡易計算
+                    計算總表 <span id='msg'> </span>
                 </h3>
-                <div class="panel-heading">簡易計算 <span id='msg'> </span> </div>
-                <div class="panel-body">
+                <div class="card-block">
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="form-group">
@@ -29,10 +27,16 @@ comments: true
                         </div>
                         <div class="col-sm-2">
                             <label for="myinput">家庭狀態</label>
-                            (<label class="form-check-label" for="ss_eligible">
-                                已婚 </label><input class="form-check-input" type="checkbox" value="1" id="married">)
-                            <select class="form-control" id="expense_kids">
-                                <option selected>請選擇</option>
+                                (
+                                <label class="u-check g-pl-25">
+                                    <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox" value="1" id="married">
+                                    <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0">
+                                        <i class="fa" data-check-icon=""></i>
+                                    </div>
+                                    已婚
+                                </label>
+                                )
+                            <select class="custom-select mb-3" id="expense_kids">
                                 <option value="0" selected>無小孩</option>
                                 <option value="1">育有一位孩子</option>
                                 <option value="2">育有二位孩子</option>
@@ -55,8 +59,9 @@ comments: true
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <h3> 還有 <label for="myinput" id="yearsRemain">...</label> 年的人生 </h3>
-                                <p>利用你的預期壽命來計算你的現金
-                                    <h3>當你到達 <span id="life_end"> </span>歲的時候，你的總資產將會達到<label id="retirement_savings_end">...</label> </h3> 根據您的儲蓄和退休投資進行預估。您可以調整通膨率以及投資報酬率查看各種不同情況下對您整體資產的影響。 </p>
+                                <p>依照你的預期壽命以及收入支出，來計算你的現金流
+                                    <h3>當你最終到達 <span id="life_end"> </span>歲的時候，你的總資產將會達到<label id="retirement_savings_end">...</label> </h3>
+                                    我們建議您可以調整通膨率及投資報酬率，你會發現在不同條件下對整體資產的影響相當的巨大。</p>
                             </div>
                         </div>
                         <div class="col-sm-8" id="chartHere">
@@ -66,9 +71,11 @@ comments: true
                 </div>
                 <!--end panel body -->
             </div> <!-- end panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">目前家庭收入及存款 ( 新台幣 ) </div>
-                <div class="panel-body">
+            <div class="card g-brd-primary rounded-0 mt-2">
+                <h3 class="card-header h5 text-white g-bg-primary g-brd-transparent rounded-0">
+                    目前家庭收入及存款 (現金流入)
+                </h3>
+                <div class="card-block">
                     <div class="row">
                         <div class="col-sm-3">
                             <div class="form-group">
@@ -77,7 +84,12 @@ comments: true
                                 <small> 稅前 </small>
                             </div>
                         </div>
-                        <div class="col-sm-3"></div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="myinput"> 薪資成長率(%) </label>
+                                <input type="number" class="form-control" id="income_inflation_rate" value="3.0" placeholder="% average salary growth">
+                            </div>
+                        </div>
                         <div class="col-sm-6"></div>
                     </div> <!-- row -->
                     <div class="row">
@@ -165,9 +177,11 @@ comments: true
                 </div>
                 <!--end panel body -->
             </div> <!-- end panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">全家總開銷</div>
-                <div class="panel-body">
+            <div class="card g-brd-lightred rounded-0 mt-2">
+                <h3 class="card-header h5 text-white g-bg-lightred g-brd-transparent rounded-0">
+                    全家總開銷 (現金流出)
+                </h3>
+                <div class="card-block">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="form-group">
@@ -186,7 +200,7 @@ comments: true
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="myinput">通膨率(%)</label>
-                                <input type="number" class="form-control" id="expense_inflation_rate" value="1" placeholder="Projected Inflation rate">
+                                <input type="number" class="form-control" id="expense_inflation_rate" value="1.5" placeholder="Projected Inflation rate">
                                 <small>每年通貨膨脹率</small>
                             </div>
                         </div>
@@ -262,23 +276,18 @@ comments: true
                 </div> <!-- end panel body-->
                 <div class="panel-footer"> </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">Calculate and Store</div>
-                <div class="panel-body">
-                    <button class="btn btn-primary" type="button" onClick="SaveForm(); notify('Calculated..')">計算</button>
-                    <button class="btn btn-primary" type="button" onClick="SaveForm(); notify('Form Saved') ">存檔(本機端)</button>
-                    <button class="btn  btn-primary" type="reset" onClick="localStorage.clear(); notify('Defaults Reset and LocalStorage Cleared') ">重置成預設值 </button>
+            <div class="card g-brd-teal rounded-0 mt-2">
+                <h3 class="card-header h5 text-white g-bg-teal g-brd-transparent rounded-0">
+                    存檔與列印
+                </h3>
+                <div class="card-block">
+                    <button class="btn u-btn-black" type="button" onClick="SaveForm(); notify('已計算完成')">重新計算</button>
+                    <button class="btn u-btn-black" type="button" onClick="SaveForm(); notify('已存擋') ">存檔 (僅本機端)</button>
+                    <button class="btn u-btn-black" type="reset" onClick="localStorage.clear(); notify('已重置回預設值') ">重置回本站預設值 </button>
                     <!--button class="btn btn btn-info" type="button" onClick="DownLoadCSV()">Download CSV</button-->
                 </div>
             </div>
         </form>
-    </div>
-    <div class="col-md-2">
-        <div class="sticky-top sticky-top-80">
-            <h5>Buy me a coffee</h5>
-            <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
-            <a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-        </div>
     </div>
 </div>
 <script>
@@ -470,6 +479,7 @@ function Calculate() {
 
     var i;
 
+    var income_inflation_rate = parseFloat($("#income_inflation_rate").val() / 100);
     var work_years = $("#work_years").val(); //how many more years to work - receive full income
     var ssn_year_eligible = $("#age_ssn_eligible").val(); // what year start receiving social security
     var retirement_give_years = $("#retirement_give_years").val(); // what year start receiving social security
@@ -500,8 +510,9 @@ function Calculate() {
         ai.i = (i);
         ai.age = (+i + +currentAge);
 
+        ai.income_inflation_rate = Math.pow(1 + income_inflation_rate, (i - 1));
         //	console.log(i+" < "+work_years);
-        ai.income_earned = (i <= work_years) ? parseInt($("#income").val()) : 0;
+        ai.income_earned = (i <= work_years) ? parseInt($("#income").val())*ai.income_inflation_rate : 0;
 
         ai.one_time = (ai.age == inheritance_age) ? parseInt($("#income_inheritance").val()) : 0;
         ai.rents = parseFloat($("#income_realestate_rentals").val());
