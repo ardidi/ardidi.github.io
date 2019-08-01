@@ -1,7 +1,7 @@
 # Site
-name: "職場中離的人生"
-title: "職場中離的人生"
-description: "跟著我們一起學習如何規劃財務，讓未來生活更有保障，達到提早從職場中離的終極目標"
+name: "想退休實驗室"
+title: "想退休實驗室"
+description: "薪水太少、花費太高、老闆討厭、買不起房？讓想退休實驗室幫你解決問題"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -15,12 +15,12 @@ permalink: /:title/
 authors:
   sandy:
     name: Sandy
-    display_name: ardidi
+    display_name: 退休研究生
     gravatar: 329f04f469be515bfbc8173ea5a96a98
     email: ardidi@ardidi.com
     web: https://ardidi.com
     twitter: https://twitter.com/ardidi
-    description: "一個從研究所畢業後就開始各種創業，妄想在35歲之前就能夠退休的人 (規劃中)"
+    description: "是個妄想在35歲之前就能夠退休的退休研究生"
   john:
     name: John
     display_name: ''    
