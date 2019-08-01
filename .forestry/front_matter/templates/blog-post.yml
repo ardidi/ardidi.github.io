@@ -20,3 +20,9 @@ fields:
 - type: list
   name: points
   label: points
+- name: featured
+  type: boolean
+  label: featured
+- name: hidden
+  type: boolean
+  label: hidden
