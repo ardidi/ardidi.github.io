@@ -80,7 +80,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">一年家庭薪資收入</label>
-                                <input type="number" class="form-control" id="income" value="800000" placeholder="新台幣">
+                                <input type="text" class="form-control currency" id="income" value="800000" placeholder="新台幣">
                                 <small> 稅前 </small>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput"> 現有投資以及存款</label>
-                                <input type="number" class="form-control" id="savings" value="1000000" placeholder="新台幣">
+                                <input type="text" class="form-control currency" id="savings" value="1000000" placeholder="新台幣">
                                 <small> 包括定存、活存、股票、儲蓄險等... </small>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ comments: true
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="myinput">每年固定收入</label>
-                                <input type="number" class="form-control" id="income_realestate_rentals" value="0" placeholder="% Average return ">
+                                <input type="text" class="form-control currency" id="income_realestate_rentals" value="0" placeholder="% Average return ">
                                 <small> (收租、每年家人或兒女孝親費)</small>
                             </div>
                         </div>
@@ -131,7 +131,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">繼承遺產</label>
-                                <input type="number" class="form-control" id="income_inheritance" value="0" placeholder="Inheritance lump sum">
+                                <input type="text" class="form-control currency" id="income_inheritance" value="0" placeholder="Inheritance lump sum">
                                 <small> 遺產所得
                                 </small>
                             </div>
@@ -148,7 +148,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput"> 勞工退休金(月) </label>
-                                <input type="number" class="form-control" id="retirement" value="13944" placeholder="Current Retriment">
+                                <input type="text" class="form-control currency" id="retirement" value="13944" placeholder="Current Retriment">
                                 <small> 勞工退休金試算，請填入「預估每月可領月退休金」 (來源:<a href='https://calc.mol.gov.tw/trial/personal_account_frame.asp' target="_blank"> 勞工個人退休金試算 </a> ) （夫妻2人請加總)</small>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">勞保年金給付(月)</label>
-                                <input type="number" class="form-control" id="income_tss" value="28396" placeholder="Annual Pension income">
+                                <input type="text" class="form-control currency" id="income_tss" value="28396" placeholder="Annual Pension income">
                                 <small> 勞保年金試算，請填入試算完後最高 (來源:<a href='https://www.bli.gov.tw/0014040.html' target="_blank"> 勞保年金給付試算 </a> )（夫妻2人請加總)</small>
                             </div>
                         </div>
@@ -186,14 +186,14 @@ comments: true
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="myinput">綜合所得稅</label>
-                                <input type="number" class="form-control" id="expense_tax_income" value="0" placeholder="Income Taxes ">
+                                <input type="text" class="form-control currency" id="expense_tax_income" value="0" placeholder="Income Taxes ">
                                 <small> 依照107年度估算稅金(Soucre: <a href='https://www.etax.nat.gov.tw/etwmain/front/ETW158W1'>綜合所得稅試算 </a> </small>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="myinput">保險費、醫藥費 </label>
-                                <input type="number" class="form-control" id="expense_healthcare" value="20000" placeholder="Healthcare costs">
+                                <input type="text" class="form-control currency" id="expense_healthcare" value="20000" placeholder="Healthcare costs">
                                 <small>每年的保險以及醫藥費</small>
                             </div>
                         </div>
@@ -209,7 +209,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">每年房貸費用</label>
-                                <input type="number" class="form-control" id="expense_house" value="240000" placeholder="Mortage or Rent">
+                                <input type="text" class="form-control currency" id="expense_house" value="240000" placeholder="Mortage or Rent">
                                 <small> 請填年繳金額，無房貸填0 </small>
                             </div>
                         </div>
@@ -223,7 +223,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">租房租金 or 房屋稅 (年)</label>
-                                <input type="number" class="form-control" id="expense_house_tax" value="20000" placeholder="Housing propety tax">
+                                <input type="text" class="form-control currency" id="expense_house_tax" value="20000" placeholder="Housing propety tax">
                                 <small> 有房填寫填寫房屋稅，如果是租房填寫房租 （別忘了管理費等雜項加總）</small>
                             </div>
                         </div>
@@ -246,7 +246,7 @@ comments: true
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">飲食費 (年)</label>
-                                <input type="number" class="form-control" id="expense_food" value="120000" placeholder="Cost of Food for a year">
+                                <input type="text" class="form-control currency" id="expense_food" value="120000" placeholder="Cost of Food for a year">
                                 <small> 年度</small>
                             </div>
                         </div>
@@ -254,21 +254,21 @@ comments: true
                             <div class="form-group">
                                 <label for="myinput">水電瓦斯電信費 (年) </label>
                                 <!-- https://www.energystar.gov/products/where_does_my_money_go -->
-                                <input type="number" class="form-control" id="expense_utilities" value="30000" placeholder="Cost of Utilities ">
+                                <input type="text" class="form-control currency" id="expense_utilities" value="30000" placeholder="Cost of Utilities ">
                                 <small> 我家電費兩個月八千元 T.T </small>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">交通費 (年) </label>
-                                <input type="number" class="form-control" id="expense_transport" value="40000" placeholder="Transportation costs ">
+                                <input type="text" class="form-control currency" id="expense_transport" value="40000" placeholder="Transportation costs ">
                                 <small> 開車可填寫油錢、搭大眾運輸可填寫車票錢 </small>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="myinput">其他費用 (年)</label>
-                                <input type="number" class="form-control" id="expense_misc" value="100000" placeholder="Cost of Vacation">
+                                <input type="text" class="form-control currency" id="expense_misc" value="100000" placeholder="Cost of Vacation">
                                 <small> 旅遊、紅包、孝親費、其餘雜項 </small>
                             </div>
                         </div>

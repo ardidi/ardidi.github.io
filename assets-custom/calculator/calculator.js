@@ -136,6 +136,8 @@ $(document).ready(function() {
         Calculate(); //Re-Calcualte the Model
     });
 
+    $('.currency').mask("#,##0", {reverse: true});
+
 });
 
 
@@ -151,13 +153,13 @@ function Calculate() {
     $("#life_end").text($("#lifeExpect").val());
 
     //Income 
-    var income_saved = $("#income").val() * $("#income_savings_rate").val() / 100;
+    var income_saved = accounting.unformat($("#income").val()) * $("#income_savings_rate").val() / 100;
     $("#income_saved").text(formatTWD(income_saved));
 
-    var savings_interest_income = $("#savings").val() * $("#savings_apy").val() / 100;
+    var savings_interest_income = accounting.unformat($("#savings").val()) * $("#savings_apy").val() / 100;
     $("#savings_interest_income").text(savings_interest_income);
 
-    var income_realestate_rentals_income = $("#income_realestate_rentals").val();
+    var income_realestate_rentals_income = accounting.unformat($("#income_realestate_rentals").val());
     $("#income_realestate_rentals_income").text(income_realestate_rentals_income);
 
     //Expenses:
@@ -204,20 +206,20 @@ function Calculate() {
 
         ai.income_inflation_rate = Math.pow(1 + income_inflation_rate, (i - 1));
         //	console.log(i+" < "+work_years);
-        ai.income_earned = (i <= work_years) ? parseInt($("#income").val())*ai.income_inflation_rate : 0;
+        ai.income_earned = (i <= work_years) ? accounting.unformat($("#income").val())*ai.income_inflation_rate : 0;
 
-        ai.one_time = (ai.age == inheritance_age) ? parseInt($("#income_inheritance").val()) : 0;
-        ai.rents = parseFloat($("#income_realestate_rentals").val());
-        ai.ssn = (ai.age >= ssn_year_eligible) ? parseFloat($("#income_ss").val()) : 0;
+        ai.one_time = (ai.age == inheritance_age) ? accounting.unformat($("#income_inheritance").val()) : 0;
+        ai.rents = accounting.unformat($("#income_realestate_rentals").val());
+        ai.ssn = (ai.age >= ssn_year_eligible) ? accounting.unformat($("#income_ss").val()) : 0;
 
-        ai.savings = ai.income_earned + parseFloat($("#savings").val()) + ai.rents;
+        ai.savings = ai.income_earned + accounting.unformat($("#savings").val()) + ai.rents;
         ai.savings_Int = ai.savings * parseFloat($("#savings_apy").val() / 100);
 
-        ai.savings = parseFloat($("#savings").val()) + ai.rents;
+        ai.savings = accounting.unformat($("#savings").val()) + ai.rents;
         ai.savings_Int = ai.savings * parseFloat($("#savings_apy").val() / 100);
 
-        ai.retirement = parseFloat($("#retirement").val());
-        ai.income_tss = parseFloat($("#income_tss").val());
+        ai.retirement = accounting.unformat($("#retirement").val());
+        ai.income_tss = accounting.unformat($("#income_tss").val());
 
         //	ai.retirement_Int=parseInt( $("#retirement").val() ) * parseFloat( $("#retirement_apy").val()/100 ) ;
 
@@ -277,22 +279,22 @@ function Calculate() {
         }
         //     exp.tax_bracket= tax_rate;
 
-        exp.income_tax = parseFloat($("#expense_tax_income").val());
-        exp.healthcare = parseFloat($("#expense_healthcare").val())
+        exp.income_tax = accounting.unformat($("#expense_tax_income").val());
+        exp.healthcare = accounting.unformat($("#expense_healthcare").val())
 
         //how long to counts your  mortgage
-        house_term = parseInt($("#expense_house_term").val());
-        exp.housing = (i < house_term) ? parseInt($("#expense_house").val()) : 0;
-        exp.property_tax = parseInt($("#expense_house_tax").val());
+        house_term = accounting.unformat($("#expense_house_term").val());
+        exp.housing = (i < house_term) ? accounting.unformat($("#expense_house").val()) : 0;
+        exp.property_tax = accounting.unformat($("#expense_house_tax").val());
 
         //how many years kids are your dependants  for how long -  use an average for multiple ages
-        dependants_years = parseInt($("#expense_kids_term").val());
+        dependants_years = accounting.unformat($("#expense_kids_term").val());
         exp.dependants = (i < dependants_years) ? $("#expense_kids").val() * expense_kids_assumption : 0;
 
-        exp.food = parseInt($("#expense_food").val());
-        exp.utilities = parseInt($("#expense_utilities").val());
-        exp.transport = parseInt($("#expense_transport").val());
-        exp.optional = parseInt($("#expense_misc").val());
+        exp.food = accounting.unformat($("#expense_food").val());
+        exp.utilities = accounting.unformat($("#expense_utilities").val());
+        exp.transport = accounting.unformat($("#expense_transport").val());
+        exp.optional = accounting.unformat($("#expense_misc").val());
 
         //	exp.debt=parseInt( $("#expense_debt").val()  );
         //	exp.debt_payoff_years=parseInt( $("#expense_debt_payoff_years").val()  );
