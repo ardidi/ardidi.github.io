@@ -65,7 +65,7 @@ comments: true
                             </div>
                         </div>
                         <div class="col-sm-8" id="chartHere">
-                            <canvas id="myChart" style="min-width: 310px; height: 400px; margin: 0 auto"></canvas>
+                            <canvas id="myChart" style="min-width: 310px; min-height: 800px; margin: 0 auto"></canvas>
                         </div>
                     </div> <!-- row -->
                 </div>

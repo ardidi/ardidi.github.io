@@ -354,7 +354,7 @@ function Calculate() {
 
 function plotChart() {
     $("#myChart").remove();
-    $("#chartHere").html('<canvas id="myChart"  style="min-width: 310px; height: 400px; margin: 0 auto"></canvas>');
+    $("#chartHere").html('<canvas id="myChart"></canvas>');
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
@@ -406,12 +406,14 @@ function plotChart() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
+            aspectRatio: 1,
             legend: {
                 position: 'top',
             },
             title: {
                 display: true,
-                text: '您的資產預測圖 (點選下方圖示說明可看單項現金流的影響)'
+                text: '您的資產預測圖'
             }
         }
     }); //end of chart
