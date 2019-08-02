@@ -336,10 +336,15 @@ span.post-read-more a:hover {
 
 .article-post {
     font-family: Merriweather;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
 }
+
+.points {
+    font-size: 1.2rem;
+}
+
 
 blockquote {
     border-left: 4px solid #00ab6b;
