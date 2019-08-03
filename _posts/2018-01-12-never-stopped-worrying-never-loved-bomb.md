@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_with_point
 title: Never stopped worrying or loving the bomb
 author: sal
 categories:
