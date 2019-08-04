@@ -56,15 +56,15 @@ comments: true
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-5">
                             <div class="form-group">
-                                <h3> 還有 <label for="myinput" id="yearsRemain">...</label> 年的人生 </h3>
-                                <p>依照你的預期壽命以及收入支出，來計算你的現金流
-                                    <h3>當你最終到達 <span id="life_end"> </span>歲的時候，你的總資產將會達到<label id="retirement_savings_end">...</label> </h3>
-                                    我們建議您可以調整通膨率及投資報酬率，你會發現在不同條件下對整體資產的影響相當的巨大。</p>
+                                <h3>右圖列出您未來<label for="myinput" id="yearsRemain">...</label> 年資產增長方式 </h3>
+                                <h3>當您<label id="retire_start">...</label>歲退休時，您的總資產將有<label id="retirement_savings_start">...</label>，到達 <span id="life_end"></span>歲時，你的總資產將可達到<label id="retirement_savings_end">...</label> </h3>
+                                <h5>整體結論：<label id="result" style="color: #FF0000; font-weight: bold;">...</label></h5>
+                                <p>請記住：我們是依照您輸入的參數，來調整您可能的現金流，此計算機使用的參數僅為簡化計算，並非專業的財務規劃建議，本站目前無推薦財務規劃師。</p>
                             </div>
                         </div>
-                        <div class="col-sm-8" id="chartHere">
+                        <div class="col-sm-7" id="chartHere">
                             <canvas id="myChart" style="min-width: 310px; min-height: 800px; margin: 0 auto"></canvas>
                         </div>
                     </div> <!-- row -->

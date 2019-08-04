@@ -78,7 +78,7 @@ function income_tax(val, married, child) {
 function formatTWD(val) {
     //	console.log("Formating USD: "+val);
     val = isNaN(parseFloat(val)) ? 0 : val; //check for invalid values
-    return "新台幣$" + val.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    return "$" + val.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 
     //	return "新台幣$"+(val).toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,');  // 12,345.67
 };
@@ -150,6 +150,7 @@ function Calculate() {
     $("#yearsRemain").text(years);
     $("#work_years_slider").attr('max', years); //set the Retire age max to remaining lifetime
     $("#retire_age").text(retire_age);
+    $("#retire_start").text(retire_age);
     $("#life_end").text($("#lifeExpect").val());
 
     //Income 
@@ -174,7 +175,7 @@ function Calculate() {
     var i;
 
     var income_inflation_rate = parseFloat($("#income_inflation_rate").val() / 100);
-    var work_years = $("#work_years").val(); //how many more years to work - receive full income
+    var work_years = parseInt($("#work_years").val()); //how many more years to work - receive full income
     var ssn_year_eligible = $("#age_ssn_eligible").val(); // what year start receiving social security
     var retirement_give_years = $("#retirement_give_years").val(); // what year start receiving social security
     var inheritance_age = $("#income_inheritance_age").val(); // age when you project to get one time inheritance.
@@ -183,6 +184,9 @@ function Calculate() {
         var married = 1;
     else
         var married = 0;
+
+    var start_retire_saving=0;
+    var end_life_saving=0;
 
 
     incomes = []; //reset the incomes array for new 
@@ -233,21 +237,19 @@ function Calculate() {
 
         //Now calculate how much to withdraw from savings and retirement accounts AFTER we're RETIRED
         if (i > work_years) { //退休後生活
+//                console.log( (parseInt(work_years)+1) +" "+ i);
 
-            //		ai.retirement_income=(withdraw_rate*ai.savings);	
-
-            //	  	ai.savings = ai.savings-(withdraw_rate*ai.savings);
-
-            //TODO: adjust retirement withdraw only after AGE 60 (USA time when no penalty)
-            //		ai.retirement= ai.retirement - (withdraw_rate*ai.retirement  ) ; //subract % from retirment investments
-
-            //console.log(i+" > workyears+2 "+(+work_years+2)+" withdraw:"+withdraw_rate+ " on savings "+ai.savings);
-            if ((+work_years + 1) == i) //Show first and last year how much retirement income we get.
+            if ( (parseInt(work_years)+1)  == i){
                 $("#retirement_income_start").text(formatTWD(ai.retirement_income));
-            else
+                $("#retirement_savings_start").text(formatTWD(ai.savings));
+                start_retire_saving=ai.savings;
+            }else{
                 $("#retirement_income_end").text(formatTWD(ai.retirement_income));
+            }
 
             $("#retirement_savings_end").text(formatTWD(ai.savings));
+            end_life_saving=ai.savings;
+
         }
 
         if (ai.age > ssn_year_eligible) { //勞保+勞退開始年紀
@@ -308,7 +310,7 @@ function Calculate() {
 
         exp.total_annual_expenses = (tax + exp.healthcare + exp.housing + exp.property_tax + exp.dependants + exp.food + exp.utilities + exp.transport + exp.optional);
 
-        console.log(tax + " " + exp.healthcare + " " + exp.housing + " " + exp.property_tax + " " + exp.dependants + " " + exp.food + " " + exp.utilities + " " + exp.transport + " " + exp.optional);
+//        console.log(tax + " " + exp.healthcare + " " + exp.housing + " " + exp.property_tax + " " + exp.dependants + " " + exp.food + " " + exp.utilities + " " + exp.transport + " " + exp.optional);
 
         //Now add  PROJECTED INFLATION rate to annual expenses
         exp.total_annual_expenses = exp.total_annual_expenses * exp.inflation_rate;
@@ -333,19 +335,31 @@ function Calculate() {
 
     console.log("=====ANNUAL INCOMES ==============");
     incomes.forEach(function(obj) {
-        console.log(JSON.stringify(obj));
+//        console.log(JSON.stringify(obj));
     });
 
     console.log("=====ANNUAL EXPENSES ==============");
     expenses.forEach(function(obj) {
-        console.log(JSON.stringify(obj));
+  //      console.log(JSON.stringify(obj));
         n = (obj.i - 1);
 
         var diff = (incomes[n].total_annual_income.toFixed(2) - expenses[n].total_annual_expenses.toFixed(2));
-        console.log("Annual Income: " + incomes[n].total_annual_income.toFixed(2) + " -  " + expenses[n].total_annual_expenses.toFixed(2) + " Expenses  =   " + diff.toFixed(2));
+//        console.log("Annual Income: " + incomes[n].total_annual_income.toFixed(2) + " -  " + expenses[n].total_annual_expenses.toFixed(2) + " Expenses  =   " + diff.toFixed(2));
 
 
     });
+
+//start_retire_saving
+//end_life_saving
+    if(end_life_saving<0){
+        $("#result").text("您的財務需要進行調整，建議您延後退休或是降低開銷，或是開始閱讀我們的網站。");
+    }else if(start_retire_saving >= end_life_saving){
+        $("#result").text("您的退休生活無虞，但如果遭遇巨大風險時可能無法承受，您可以再閱讀我們網站獲得更多想法。");
+    }else if(start_retire_saving < end_life_saving){
+        $("#result").text("您的退休成功率極高，建議您隨時檢視自己的收入支出及保險，並且多多回來閱讀我們網站，讓你的退休獲得更大保障。");
+    }else{
+        $("#result").text("應該不會有這樣的情況，如果出現請將設定給我看一下XD");
+    }
 
     //Updatge the Chart
     plotChart();
@@ -416,7 +430,21 @@ function plotChart() {
             title: {
                 display: true,
                 text: '您的資產預測圖'
-            }
+            },
+            scales: {
+                yAxes: [{
+                  ticks: {
+                    beginAtZero: true,
+                    callback: function(value, index, values) {
+                      if(parseInt(value) >= 1000){
+                        return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                      } else {
+                        return '$' + value;
+                      }
+                    }
+                  }
+                }]
+              }
         }
     }); //end of chart
 }
