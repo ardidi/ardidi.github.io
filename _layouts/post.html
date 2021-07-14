@@ -146,19 +146,9 @@ post_class: post-template
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-		        <form method="POST" action="https://jekyll-staticman-for-ardidicom.herokuapp.com/v3/entry/github/ardidi/ardidi.github.io/master/comments">
-				  <input name="options[redirect]" type="hidden" value="{{ site.baseurl }}{{ post.url }}">
-				  <!-- e.g. "2016-01-02-this-is-a-post" -->
-				  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-				  <label><input name="fields[name]" type="text">Name</label>
-				  <label><input name="fields[email]" type="email">E-mail</label>
-				  <label><textarea name="fields[message]"></textarea>Message</label>
-				  
-				  <button type="submit">Go!</button>
-				</form>
+                {% include staticman.html %}
             </div>
         </div>
-        
     </div>
 {% endif %}
 <!--End Comments

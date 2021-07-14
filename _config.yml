@@ -1,7 +1,7 @@
 # Site
 name: "想退休實驗室"
 title: "想退休實驗室"
-description: "薪水太少、花費太高、存不了錢、買不起房？我真的能退休嗎啊啊啊啊？讓想退休實驗室帶你解決疑難雜症"
+description: "生活、程式"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -15,7 +15,7 @@ permalink: /:title/
 authors:
   sandy:
     name: Sandy
-    display_name: 退休研究生
+    display_name: Shan-Ti Chuang
     gravatar: 329f04f469be515bfbc8173ea5a96a98
     email: ardidi@ardidi.com
     web: https://ardidi.com
