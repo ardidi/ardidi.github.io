@@ -1,7 +1,7 @@
 # Site
-name: ""
+name: "ardidi Blog"
 title: "ardidi"
-description: "生活、程式、休閒"
+description: "程式、生活、休閒、理財、提早退休"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
